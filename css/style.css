@@ -637,41 +637,6 @@ textarea.input {
 }
 
 /* ==========================
-   WHY CHOOSE US SECTION
-   ========================== */
-.why-choose-us .reason-card {
-    background: #fff5ef;
-    border-radius: 10px;
-    border: 1px solid #f36700;
-    padding: 25px;
-	margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.why-choose-us .reason-card:hover {
-    border-color: #f36500;
-    box-shadow: 0 6px 15px rgba(243,101,0,0.15);
-}
-
-.why-choose-us .reason-card .icon {
-    font-size: 40px;
-    color: #f36500;
-    margin-bottom: 15px;
-}
-
-.why-choose-us .reason-card h4 {
-    color: #f36700;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-/* ==========================
    MISSION SECTION
    ========================== */
 .about-content{
@@ -690,6 +655,57 @@ textarea.input {
 
 .about-content p{
 	margin-top: 15px;
+}
+
+/* ==========================
+   WHY CHOOSE US SECTION
+   ========================== */
+/* Why Choose Us - Reason Cards */
+.reason-cards-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.reason-cards-row > [class*="col-"] {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.reason-card {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100%;
+}
+
+.reason-card:hover {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	transform: translateY(-5px);
+}
+
+.reason-card .icon {
+	font-size: 40px;
+	color: #f36500;
+	margin-bottom: 15px;
+}
+
+.reason-card h4 {
+	color: #f36500;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.reason-card p {
+	color: #6c757d;
+	font-size: 14px;
 }
 
 /*------------------------------------*\
