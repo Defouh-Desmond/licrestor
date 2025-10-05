@@ -588,6 +588,110 @@ textarea.input {
     right: -70px;
 }
 
+/* ==========================
+   OUR CHEFS SECTION
+   ========================== */
+.chef-card {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+}
+
+.chef-card:hover {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	transform: translateY(-5px);
+}
+
+.chef-card img {
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+}
+
+.chef-card .flex-chef {
+	margin-top: 15px;
+}
+
+.chef-card .ratting-star {
+	/* Gradient-like effect using two close colors */
+	color: #f36500; 
+	text-shadow: 1px 1px 0 #f36700;
+	margin-right: 2px;
+}
+
+.chef-card h4 {
+	color: #f36500; /* Headings in primary brand color */
+	font-weight: bold;
+}
+
+.chef-card .text-muted {
+	color: #6c757d;
+	font-size: 14px;
+}
+
+.chef-card p {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+/* ==========================
+   WHY CHOOSE US SECTION
+   ========================== */
+.why-choose-us .reason-card {
+    background: #fff5ef;
+    border-radius: 10px;
+    border: 1px solid #f36700;
+    padding: 25px;
+	margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.why-choose-us .reason-card:hover {
+    border-color: #f36500;
+    box-shadow: 0 6px 15px rgba(243,101,0,0.15);
+}
+
+.why-choose-us .reason-card .icon {
+    font-size: 40px;
+    color: #f36500;
+    margin-bottom: 15px;
+}
+
+.why-choose-us .reason-card h4 {
+    color: #f36700;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   MISSION SECTION
+   ========================== */
+.about-content{
+	background:#ffffff; 
+	border-left: 4px solid #f36700; 
+	border-radius: 8px; 
+	padding: 30px; 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+	margin-top: 10px;
+}
+
+.about-content h3{
+	color: #f36700; 
+	font-weight: 600;
+}
+
+.about-content p{
+	margin-top: 15px;
+}
+
 /*------------------------------------*\
 	Menu
 \*------------------------------------*/
@@ -683,6 +787,212 @@ textarea.input {
 	padding-left: 10px;
 	color:#f36700;
 }
+
+/* --- menu page content --- */
+.meal {
+	background: #fff;
+	border: 1px solid #f2f2f2;
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 15px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+	transition: 0.3s;
+	border-radius: 12px;
+}
+
+.meal:hover {
+  border-color: #f36500;
+  box-shadow: 0 4px 12px rgba(243, 101, 0, 0.15);
+}
+
+.meal img {
+	width: 100%;
+	border-radius: 5px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.meal .name {
+  color: #f36500;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.meal .details {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.meal .details .price {
+	display: flex;
+	gap: 15px;
+	margin-top: 10px;
+}
+
+.meal .details .price p{
+	color: #151515;
+}
+
+.meal .details .price strike{
+	font-size: 14px;
+}
+
+.cart-section {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 100px;
+}
+
+.cart {
+	background: #fff;
+	border: 1px solid #f2f2f2;
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 15px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+.cart h4 {
+	margin-top: 0;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+
+/* dynamically generated cart item */
+#cart-items {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+  
+.cart-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+	padding: 8px 0;
+}
+
+.cart-item p{
+	color: #000;
+	font-size: 14px;
+}
+  
+.item-controls {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+  
+.qty-input {
+	width: 35px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 3px;
+	outline: none;
+	cursor: default;
+}
+  
+.qty-minus, .qty-plus, .remove-item {
+	border: none;
+	background: none;
+	cursor: pointer;
+	font-size: 14px;
+	color: #333;
+	transition: color 0.2s ease;
+	outline: none;
+	border-radius: 4px;
+	padding: 4px 8px;
+	border: 1px solid #ddd;
+	transition: .5s;
+}
+
+.qty-minus:hover, .qty-plus:hover {
+	color: #fff;
+	background-color: #f36500;
+}
+  
+.remove-item:hover {
+	background-color: rgba(255, 0, 0, 0.616);
+	color: #fff;
+}
+  
+.price {
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.checkout{
+	padding:15px 30px;
+	border-radius:40px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/* modal content styles */
+.summary-items table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.summary-items th, .modal-body td {
+    text-align: center;
+    vertical-align: middle;
+	color: #000;
+}
+
+/*------------------------------------*\
+	Testimonials
+\*------------------------------------*/
+.testimonial{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.testimonial .image{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	overflow: hidden;
+	border: 1px solid;
+	margin: 10px 0px;
+}
+
+.testimonial .image img{
+	width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+
+}
+
+.name{
+	font-size: 18px;
+}
+
+.ratting{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3px;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.ratting .ratting-star{
+	color: #f36700;
+}
+
+
+
+
 
 /*------------------------------------*\
 	Reservation
