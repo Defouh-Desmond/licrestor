@@ -591,122 +591,155 @@ textarea.input {
 /* ==========================
    OUR CHEFS SECTION
    ========================== */
+/* Chefs Section */
+.chefs-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.chefs-row > [class*="col-"] {
+    display: flex;
+    margin-bottom: 30px;
+}
+
 .chef-card {
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 20px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-	transition: all 0.3s ease-in-out;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    text-align: center;
 }
 
 .chef-card:hover {
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-	transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
 }
 
-.chef-card img {
-	border-radius: 10px;
-	max-width: 100%;
-	height: auto;
+.chef-img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/.5;
 }
 
-.chef-card .flex-chef {
-	margin-top: 15px;
+.flex-chef {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
 }
 
-.chef-card .ratting-star {
-	/* Gradient-like effect using two close colors */
-	color: #f36500; 
-	text-shadow: 1px 1px 0 #f36700;
-	margin-right: 2px;
+
+.flex-chef h4 {
+    margin-top: 15px;
+    color: #f36500;
+    font-weight: bold;
 }
 
-.chef-card h4 {
-	color: #f36500; /* Headings in primary brand color */
-	font-weight: bold;
+
+.chef-card p.text-muted {
+    color: #6c757d;
+    margin-top: 10px;
 }
 
-.chef-card .text-muted {
-	color: #6c757d;
-	font-size: 14px;
+.chef-card p:last-child {
+    margin-top: 10px;
 }
 
-.chef-card p {
-	margin-top: 10px;
-	margin-bottom: 0;
-}
 
 /* ==========================
    MISSION SECTION
    ========================== */
-.about-content{
-	background:#ffffff; 
-	border-left: 4px solid #f36700; 
-	border-radius: 8px; 
-	padding: 30px; 
-	box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-	margin-top: 10px;
-}
-
-.about-content h3{
-	color: #f36700; 
-	font-weight: 600;
-}
-
-.about-content p{
-	margin-top: 15px;
-}
-
-/* ==========================
-   WHY CHOOSE US SECTION
-   ========================== */
-/* Why Choose Us - Reason Cards */
-.reason-cards-row {
+.mission-vision-row {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -15px;
 	margin-right: -15px;
 }
 
-.reason-cards-row > [class*="col-"] {
+.mission-vision-row > .col-md-6 {
 	display: flex;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
-.reason-card {
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 20px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-	transition: all 0.3s ease-in-out;
+.about-content {
+	background: #ffffff; 
+	border-left: 4px solid #f36700; 
+	border-radius: 8px; 
+	padding: 30px; 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: flex-start;
 	height: 100%;
 }
 
-.reason-card:hover {
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-	transform: translateY(-5px);
+.about-content h3 {
+	color: #f36700; 
+	font-weight: 600;
 }
 
-.reason-card .icon {
-	font-size: 40px;
-	color: #f36500;
-	margin-bottom: 15px;
+.about-content p {
+	margin-top: 15px;
+	flex-grow: 1;
 }
 
-.reason-card h4 {
-	color: #f36500;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-.reason-card p {
-	color: #6c757d;
-	font-size: 14px;
-}
+/* ==========================
+   WHY CHOOSE US SECTION
+   ========================== */
+   /* Reason Cards Section */
+   .why-choose-us-row > [class*="col-"] {
+	   display: flex;
+	   justify-content: center; /* Center the card inside the column */
+	   margin-bottom: 30px;     /* Space between rows */
+   }
+   
+   /* Reason Card */
+   .reason-card {
+	   background-color: #fff;
+	   border-radius: 10px;
+	   padding: 20px;
+	   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	   transition: all 0.3s ease-in-out;
+	   display: flex;
+	   flex-direction: column;
+	   align-items: center;
+	   justify-content: flex-start;
+	   height: 100%; /* Makes all cards in a row same height */
+	   text-align: center;
+   }
+   
+   .reason-card:hover {
+	   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	   transform: translateY(-5px);
+   }
+   
+   .reason-card .icon {
+	   font-size: 40px;
+	   color: #f36500;
+	   margin-bottom: 15px;
+   }
+   
+   .reason-card h4 {
+	   color: #f36500;
+	   font-weight: bold;
+	   margin-bottom: 10px;
+   }
+   
+   .reason-card p {
+	   font-size: 14px;
+	   flex-grow: 1; 
+   }
+   
 
 /*------------------------------------*\
 	Menu
@@ -949,6 +982,7 @@ textarea.input {
 	border-radius:40px;
 	text-transform: uppercase;
 	font-weight: 700;
+	margin-top: 40px;
 }
 
 /* modal content styles */
@@ -1005,8 +1039,6 @@ textarea.input {
 .ratting .ratting-star{
 	color: #f36700;
 }
-
-
 
 
 

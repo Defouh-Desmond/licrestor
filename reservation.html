@@ -23,6 +23,261 @@
 
         <!-- Custom stlylesheet -->
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <style>
+            /* ================================
+   RESERVATION PAGE STYLES
+   ================================ */
+
+/* ---------- General Section Styling ---------- */
+#reservation-page .section {
+    padding: 60px 0;
+}
+
+#reservation-page .section-header .sub-title {
+    color: #f36700;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#reservation-page .section-header .title {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#reservation-page .section-header p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* ---------- Reservation Form ---------- */
+.reservation-form input,
+.reservation-form textarea {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    width: 100%;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.reservation-form input:focus,
+.reservation-form textarea:focus {
+    border-color: #f36500;
+    outline: none;
+    box-shadow: 0 0 5px rgba(243, 101, 0, 0.3);
+}
+
+.reservation-form .main-button {
+    background-color: #f36500;
+    color: #fff;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.reservation-form .main-button:hover {
+    background-color: #f36700;
+}
+
+/* ---------- How It Works (Steps) ---------- */
+.reservation-steps {
+    background-color: #fff7f2;
+}
+
+.steps-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.steps-row > [class*="col-"] {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.step-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.step-card .step-icon {
+    background-color: #f36500;
+    color: #fff;
+    font-size: 28px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.step-card:hover .step-icon {
+    background-color: #f36700;
+}
+
+.step-card h4 {
+    color: #f36500;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---------- Reservation Policies ---------- */
+.reservation-policies {
+    background-color: #fff;
+}
+
+.policies-wrapper {
+    background-color: #fff7f2;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.policy-item {
+    margin-bottom: 25px;
+}
+
+.policy-item:last-child {
+    margin-bottom: 0;
+}
+
+.policy-item h4 {
+    color: #f36500;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.policy-item i {
+    font-size: 18px;
+}
+
+.policy-item p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ---------- Special Dining Requests ---------- */
+.special-requests {
+    background-color: #fff7f2;
+}
+
+.requests-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.requests-row > [class*="col-"] {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.request-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.request-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.request-icon {
+    background-color: #f36500;
+    color: #fff;
+    font-size: 26px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.request-card:hover .request-icon {
+    background-color: #f36700;
+}
+
+.request-card h4 {
+    color: #f36500;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.request-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---------- Responsive Tweaks ---------- */
+@media (max-width: 991px) {
+    .step-card, .request-card {
+        padding: 25px 15px;
+    }
+    .step-card .step-icon,
+    .request-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    #reservation-page .section {
+        padding: 40px 0;
+    }
+    .reservation-form input,
+    .reservation-form textarea {
+        margin-bottom: 15px;
+    }
+}
+
+        </style>
     </head>
     <body>
 
@@ -110,7 +365,185 @@
 			</div>
 		</div>
 
-		
+		<!-- Reservation Page -->
+        <div id="reservation-page">
+
+            <!-- Reservation Form Section -->
+            <div id="reservation-form" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="section-header text-center">
+                                <h4 class="sub-title">Book Your Table</h4>
+                                <h2 class="title">Make a Reservation</h2>
+                                <p>Fill out the form below to reserve your table at LIC Restaurant.</p>
+                            </div>
+                            <form action="#" method="post" class="reservation-form">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="text" name="date" class="form-control" placeholder="Reservation Date" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="time" name="time" class="form-control" placeholder="Reservation Time" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="number" name="guests" class="form-control" placeholder="Number of Guests" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <textarea name="message" class="form-control" placeholder="Special Requests (Optional)" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="main-button">Reserve Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Reservation Form Section -->
+
+            <!-- How It Works Section -->
+            <div id="reservation-steps" class="section reservation-steps">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-header text-center">
+                            <h4 class="sub-title">Simple Process</h4>
+                            <h2 class="title">How to Reserve Your Table</h2>
+                            <p>Follow these easy steps to enjoy a seamless dining experience at LIC Restaurant.</p>
+                        </div>
+                    </div>
+                    <div class="row steps-row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="step-card text-center">
+                                <div class="step-icon">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                </div>
+                                <h4>1. Fill Out the Form</h4>
+                                <p>Provide your details, preferred date, and time through our online reservation form.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="step-card text-center">
+                                <div class="step-icon">
+                                    <i class="fa fa-envelope-open-o"></i>
+                                </div>
+                                <h4>2. Receive Confirmation</h4>
+                                <p>Our team will contact you shortly to confirm your reservation and special requests.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="step-card text-center">
+                                <div class="step-icon">
+                                    <i class="fa fa-cutlery"></i>
+                                </div>
+                                <h4>3. Enjoy Your Dining</h4>
+                                <p>Arrive on time and savor the best of Cameroonian cuisine, freshly prepared for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /How It Works Section -->
+
+            <!-- Reservation Policies Section -->
+            <div id="reservation-policies" class="section reservation-policies">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-header text-center">
+                            <h4 class="sub-title">Before You Book</h4>
+                            <h2 class="title">Reservation Policies</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="policies-wrapper">
+                                <div class="policy-item">
+                                    <h4><i class="fa fa-money"></i> Deposit & Cancellation</h4>
+                                    <p>Reservations are free, but for large groups or special events, a small deposit may be required. Cancellations made less than 2 hours before your reservation may result in forfeiture of the deposit.</p>
+                                </div>
+                                <div class="policy-item">
+                                    <h4><i class="fa fa-users"></i> Group Bookings</h4>
+                                    <p>For parties of 8 or more, please reserve at least 24 hours in advance. Group menus and seating arrangements can be customized to suit your event.</p>
+                                </div>
+                                <div class="policy-item">
+                                    <h4><i class="fa fa-clock-o"></i> Late Arrival</h4>
+                                    <p>We hold tables for 15 minutes past your reservation time. If you expect to be late, kindly contact us so we can accommodate your arrival.</p>
+                                </div>
+                                <div class="policy-item">
+                                    <h4><i class="fa fa-check-circle"></i> Dress Code</h4>
+                                    <p>Smart casual is appreciated. We welcome a comfortable yet refined dining experience for all our guests.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Reservation Policies Section -->
+
+            <!-- Special Dining Requests Section -->
+            <div id="special-requests" class="section special-requests">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-header text-center">
+                            <h4 class="sub-title">Make It Memorable</h4>
+                            <h2 class="title">Special Dining Requests</h2>
+                            <p>We love creating unforgettable dining experiences. Let us know your special requests, and we’ll handle the rest!</p>
+                        </div>
+                    </div>
+                    <div class="row requests-row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="request-card text-center">
+                                <div class="request-icon">
+                                    <i class="fa fa-birthday-cake"></i>
+                                </div>
+                                <h4>Birthday Celebrations</h4>
+                                <p>Surprise your loved ones with personalized cakes, decorations, and special touches to make their day unforgettable.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="request-card text-center">
+                                <div class="request-icon">
+                                    <i class="fa fa-gift"></i>
+                                </div>
+                                <h4>Anniversaries & Special Events</h4>
+                                <p>From intimate dinners to grand celebrations, we’ll help plan the perfect menu and ambiance for your special event.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="request-card text-center">
+                                <div class="request-icon">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h4>VIP & Custom Menus</h4>
+                                <p>Request a bespoke dining experience with chef’s recommendations, exclusive dishes, or dietary accommodations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Special Dining Requests Section -->
+
+        </div>
+        <!-- /Reservation Page -->
+
 		
 
 		<!-- Footer -->
