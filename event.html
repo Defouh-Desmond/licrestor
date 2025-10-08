@@ -170,7 +170,7 @@
         </section>
 
         <!-- Past Events Section -->
-        <section id="upcoming-events" class=" events-section">
+        <section id="upcoming-events" class=" events-section" style="background-color: #fff7f2;">
             <div class="container">
                 <div class="section-header text-center">
                     <h4 class="sub-title">Our Journey</h4>
@@ -294,89 +294,7 @@
             </div>
         </section>
         <!-- /Event Highlights Section -->
-<style>
 
-/* Event Cards inside Owl Carousel */
-.event-carousel .event-card {
-    background: #fafafa;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.event-carousel .event-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-.event-card .event-img img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-.event-card:hover .event-img img {
-    transform: scale(1.05);
-}
-
-.event-info {
-    padding: 20px;
-    text-align: center;
-}
-
-.event-info h4 {
-    color: #f36500;
-    font-weight: 700;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.event-info p {
-    font-size: 14px;
-    color: #555;
-}
-
-/* Owl Carousel Custom Controls */
-.owl-theme .owl-nav [class*='owl-'] {
-    background: #f36500;
-    color: #fff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    transition: all 0.3s ease;
-}
-
-.owl-theme .owl-nav [class*='owl-']:hover {
-    background: #d85600;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-    background: #ccc;
-    width: 12px;
-    height: 12px;
-    margin: 5px 4px;
-    transition: all 0.3s;
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-    background: #f36500;
-}
-
-/* Responsive */
-@media (max-width: 767px) {
-    .event-highlights {
-        padding: 60px 0;
-    }
-
-    .event-card .event-img img {
-        height: 200px;
-    }
-}
-</style> 
 <!-- Host Your Own Event Section -->
 <div id="host-event" class="section">
     <div class="container">
@@ -414,23 +332,27 @@
             <!-- Form Column -->
             <div class="col-md-6 col-sm-12">
                 <form action="#" method="post" class="host-event-form">
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    <div class="col-sm-6" style="padding: 0;">
+                        <div class="form-group">
+                            <input type="text" name="name" class="input" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" style="padding: 0 0 0 5px;">
+                        <div class="form-group">
+                            <input type="text" name="phone" class="input" placeholder="Phone Number" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        <input type="email" name="email" class="input" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+                        <input type="date" name="date" class="input" placeholder="Event Date" required>
                     </div>
                     <div class="form-group">
-                        <input type="date" name="date" class="form-control" placeholder="Event Date" required>
+                        <input type="time" name="time" class="input" placeholder="Event Time" required>
                     </div>
                     <div class="form-group">
-                        <input type="time" name="time" class="form-control" placeholder="Event Time" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="details" class="form-control" placeholder="Event Details" rows="4"></textarea>
+                        <textarea name="details" class="input" placeholder="Event Details" rows="4"></textarea>
                     </div>
                     <div class="form-group text-center">
                         <button type="submit" class="main-button">Request Event</button>
@@ -447,27 +369,9 @@
 <style>
     /* Host Your Own Event Section */
 #host-event {
-    background: #f9f9f9;
+    background: #fff7f2;
     padding: 60px 0;
 }
-
-#host-event .section-header .sub-title {
-    color: #f36500;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-#host-event .section-header .title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-#host-event .section-header p {
-    font-size: 16px;
-    color: #555;
-}
-
 /* Info Column */
 .host-info {
     background: #fff;
