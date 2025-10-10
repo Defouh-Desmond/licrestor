@@ -7,7 +7,7 @@
 	});
 	
 	// Mobile Toggle Btn
-	$('.navbar-toggle').on('click',function(){
+	$('.navbar-toggle, .cart-button').on('click',function(){
 		$('#header').toggleClass('nav-collapse');
 	});
 	
@@ -45,6 +45,7 @@
 		}
 	});
 	$(".owl-carousel").owlCarousel({
+		items:3,
 		loop:true,
 		margin:20,
 		nav:true,

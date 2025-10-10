@@ -34,9 +34,10 @@
                 <div class="container">
 
                 <!-- logo -->
-                <div class="logo">
-                    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
-                </div>
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <h2>LICRESTOR</h2>
+                </a>
                 <!-- logo -->
 
                 <!-- Mobile toggle -->
@@ -75,7 +76,7 @@
 
                     <!-- button nav -->
                     <ul class="cta-nav">
-                        <li><a href="#" class="main-button">Host Event</a></li>
+                        <li><a href="#host-event" class="main-button">Host Event</a></li>
                     </ul>
                     <!-- button nav -->
 
@@ -104,7 +105,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h2 class="white-text title">Blog Post</h2>
+						<h2 class="white-text title">Events</h2>
 					</div>
 				</div>
 			</div>
@@ -173,7 +174,7 @@
         <section id="upcoming-events" class=" events-section" style="background-color: #fff7f2;">
             <div class="container">
                 <div class="section-header text-center">
-                    <h4 class="sub-title">Our Journey</h4>
+                    <h4 class="sub-title" style="margin-top: 30px;">Our Journey</h4>
                     <h2 class="title">Past Events</h2>
                     <p>Take a look at some of our most memorable past events that brought the LIC Restaurant community together.</p>
                </div>
@@ -295,169 +296,81 @@
         </section>
         <!-- /Event Highlights Section -->
 
-<!-- Host Your Own Event Section -->
-<div id="host-event" class="section">
-    <div class="container">
+        <!-- Host Your Own Event Section -->
+        <div id="host-event" class="section">
+            <div class="container">
 
-        <!-- Section Header -->
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <div class="section-header">
-                    <h4 class="sub-title">Make It Yours</h4>
-                    <h2 class="title">Host Your Special Event</h2>
-                    <p>Looking for a perfect venue for birthdays, anniversaries, corporate events, or private parties? LIC Restaurant offers a warm and elegant setting for all your celebrations.</p>
-                </div>
-            </div>
-        </div>
-        <!-- /Section Header -->
-
-        <!-- Form & Info -->
-        <div class="row host-event-row">
-
-            <!-- Info Column -->
-            <div class="col-md-6 col-sm-12">
-                <div class="host-info">
-                    <h4>Our Services Include:</h4>
-                    <ul class="host-services">
-                        <li>Customizable menus tailored to your event</li>
-                        <li>Decorations & themed setups</li>
-                        <li>Professional event staff & service</li>
-                        <li>Audio & visual arrangements</li>
-                        <li>Flexible seating options</li>
-                    </ul>
-                    <p>We work closely with you to ensure every detail is perfect, from the menu to the ambiance.</p>
-                </div>
-            </div>
-
-            <!-- Form Column -->
-            <div class="col-md-6 col-sm-12">
-                <form action="#" method="post" class="host-event-form">
-                    <div class="col-sm-6" style="padding: 0;">
-                        <div class="form-group">
-                            <input type="text" name="name" class="input" placeholder="Your Name" required>
+                <!-- Section Header -->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <div class="section-header">
+                            <h4 class="sub-title">Make It Yours</h4>
+                            <h2 class="title">Host Your Special Event</h2>
+                            <p>Looking for a perfect venue for birthdays, anniversaries, corporate events, or private parties? LIC Restaurant offers a warm and elegant setting for all your celebrations.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6" style="padding: 0 0 0 5px;">
-                        <div class="form-group">
-                            <input type="text" name="phone" class="input" placeholder="Phone Number" required>
+                </div>
+                <!-- /Section Header -->
+
+                <!-- Form & Info -->
+                <div class="row host-event-row">
+
+                    <!-- Info Column -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="host-info">
+                            <h4>Our Services Include:</h4>
+                            <ul class="host-services">
+                                <li>Customizable menus tailored to your event</li>
+                                <li>Decorations & themed setups</li>
+                                <li>Professional event staff & service</li>
+                                <li>Audio & visual arrangements</li>
+                                <li>Flexible seating options</li>
+                            </ul>
+                            <p>We work closely with you to ensure every detail is perfect, from the menu to the ambiance.</p>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" name="email" class="input" placeholder="Your Email" required>
+
+                    <!-- Form Column -->
+                    <div class="col-md-6 col-sm-12">
+                        <form action="#" method="post" class="host-event-form">
+                            <div class="col-sm-6" style="padding: 0;">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="input" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" style="padding: 0 0 0 5px;">
+                                <div class="form-group">
+                                    <input type="text" name="phone" class="input" placeholder="Phone Number" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="input" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-sm-6" style="padding: 0;">
+                                <div class="form-group">
+                                    <input type="date" name="date" class="input" placeholder="Event Date" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" style="padding: 0 0 0 5px;">
+                                <div class="form-group">
+                                    <input type="time" name="time" class="input" placeholder="Event Time" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="details" class="input" placeholder="Event Details" rows="4"></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="main-button">Request Event</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <input type="date" name="date" class="input" placeholder="Event Date" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="time" name="time" class="input" placeholder="Event Time" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="details" class="input" placeholder="Event Details" rows="4"></textarea>
-                    </div>
-                    <div class="form-group text-center">
-                        <button type="submit" class="main-button">Request Event</button>
-                    </div>
-                </form>
+
+                </div>
+                <!-- /Form & Info -->
+
             </div>
-
         </div>
-        <!-- /Form & Info -->
-
-    </div>
-</div>
-<!-- /Host Your Own Event Section -->
-<style>
-    /* Host Your Own Event Section */
-#host-event {
-    background: #fff7f2;
-    padding: 60px 0;
-}
-/* Info Column */
-.host-info {
-    background: #fff;
-    border-left: 4px solid #f36700;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-}
-
-.host-info h4 {
-    color: #f36700;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.host-info p {
-    margin-top: 15px;
-    color: #555;
-    line-height: 1.6;
-}
-
-.host-services {
-    list-style: disc inside;
-    padding-left: 0;
-    margin-bottom: 15px;
-    color: #555;
-}
-
-.host-services li {
-    margin-bottom: 8px;
-}
-
-/* Form Column */
-.host-event-form {
-    background: #fff;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-}
-
-.host-event-form .form-control {
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
-    height: 45px;
-    padding: 10px;
-}
-
-.host-event-form textarea.form-control {
-    height: auto;
-    resize: none;
-}
-
-.host-event-form .main-button {
-    background: #f36500;
-    color: #fff;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
-
-.host-event-form .main-button:hover {
-    background: #f36700;
-    transform: translateY(-2px);
-}
-
-/* Responsive Adjustments */
-@media (max-width: 991px) {
-    #host-event .host-info,
-    #host-event .host-event-form {
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 767px) {
-    #host-event .section-header .title {
-        font-size: 26px;
-    }
-}
-
-</style>
-
+        <!-- /Host Your Own Event Section -->
 		<!-- Footer -->
         <footer id="footer">
 
@@ -475,8 +388,8 @@
                     <div class="footer-col contact">
                         <h4>Contact Us</h4>
                         <ul class="contact-info">
-                            <li><i class="fa fa-map-marker"></i> 123 Main Street, Douala, Cameroon</li>
-                            <li><i class="fa fa-phone"></i> +237 699 123 456</li>
+                            <li><i class="fa fa-map-marker"></i> Ekounou Yaounde, Cameroon</li>
+                            <li><i class="fa fa-phone"></i> (+237) 674-467-985</li>
                             <li><i class="fa fa-envelope"></i> info@licrestaurant.cm</li>
                         </ul>
         
@@ -490,10 +403,10 @@
                     <!-- Social & Newsletter -->
                     <div class="footer-col social-newsletter">
                         <h4>Follow Us</h4>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <ul class="social-nav">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         </ul>
         
                         <h4>Newsletter</h4>
@@ -518,14 +431,13 @@
                         <a href="https://colorlib.com" target="_blank">Colorlib</a>
                     </div>
                     <nav class="footer-nav">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Menu</a>
-                        <a href="#">Reservation</a>
-                        <a href="#">Gallery</a>
-                        <a href="#">Events</a>
-                        <a href="#">Contact</a>
-                    </nav>
+						<a href="index.html">Home</a>
+						<a href="menu.html">Menu</a>
+						<a href="reservation.html">Reservation</a>
+						<a href="event.html">Events</a>
+						<a href="about.html">About</a>
+						<a href="contact.html">Contact</a>
+					</nav>
                 </div>
         
             </div>

@@ -34,9 +34,10 @@
                 <div class="container">
 
                 <!-- logo -->
-                <div class="logo">
-                    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
-                </div>
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <h2>LICRESTOR</h2>
+                </a>
                 <!-- logo -->
 
                 <!-- Mobile toggle -->
@@ -75,7 +76,7 @@
 
                     <!-- button nav -->
                     <ul class="cta-nav">
-                        <li><a href="#" class="main-button">Reserve</a></li>
+                        <li><a href="#cart-section" class="main-button cart-button">Cart</a></li>
                     </ul>
                     <!-- button nav -->
 
@@ -337,7 +338,7 @@
                     <!-- /MENU SECTION -->
 
                     <!-- CART SECTION -->
-                    <div class="col-md-4 cart-section">
+                    <div id="cart-section" class="col-md-4 cart-section">
                         <div class="cart">
                             <h4><i class="fa fa-shopping-cart"></i> Your Cart</h4>
                             <ul id="cart-items" class="list-group"></ul>
@@ -389,7 +390,7 @@
 
 
         <!-- Reviews & Testimonials -->
-        <div id="reviews" class="section" style="background: url('images/pattern-bg.svg') center/cover no-repeat; padding: 60px 0;">
+        <div id="reviews" class="section" style="background-color: #fff7f2;">
 
             <!-- container -->
             <div class="container">
@@ -408,7 +409,7 @@
                     <!-- /section header -->
 
                     <!-- Testimonials Carousel -->
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-carousel owl-theme" style="padding: 10px;">
 
                         <!-- Testimonial 1 -->
                         <div class="testimonial text-center">
@@ -490,64 +491,48 @@
         <div class="section why-choose-us">
             <div class="container">
                 <div class="row">
-
-                    <!-- Section Header -->
                     <div class="section-header text-center mb-5">
                         <h4 class="sub-title">What Makes Us Special</h4>
                         <h2 class="title">Why Choose Us</h2>
                     </div>
-                    <!-- /Section Header -->
-
-                    <!-- Reasons Container -->
-                    <div class="row d-flex flex-wrap justify-content-center">
-
-                        <!-- Reason 1 -->
-                        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
-                            <div class="reason-card text-center">
-                                <div class="icon">
-                                    <i class="fa fa-cutlery"></i>
-                                </div>
-                                <h4>Authentic Cameroonian Taste</h4>
-                                <p>We use local ingredients and traditional recipes to deliver the true flavors of Cameroon in every meal.</p>
+                </div>
+                <div class="row requests-row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="request-card text-center">
+                            <div class="request-icon">
+                                <i class="fa fa-cutlery"></i>
                             </div>
+                            <h4>Authentic Cameroonian Taste</h4>
+                            <p>We use local ingredients and traditional recipes to deliver the true flavors of Cameroon in every meal.</p>
                         </div>
-
-                        <!-- Reason 2 -->
-                        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
-                            <div class="reason-card text-center">
-                                <div class="icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <h4>Friendly Atmosphere</h4>
-                                <p>Enjoy your meal in a cozy and welcoming space where our team treats you like family.</p>
-                            </div>
-                        </div>
-
-                        <!-- Reason 3 -->
-                        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
-                            <div class="reason-card text-center">
-                                <div class="icon">
-                                    <i class="fa fa-leaf"></i>
-                                </div>
-                                <h4>Fresh & Local Ingredients</h4>
-                                <p>We partner with local farmers and suppliers to ensure every dish is fresh, healthy, and full of flavor.</p>
-                            </div>
-                        </div>
-
-                        <!-- Reason 4 -->
-                        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-4">
-                            <div class="reason-card text-center">
-                                <div class="icon">
-                                    <i class="fa fa-heart"></i>
-                                </div>
-                                <h4>Passion for Excellence</h4>
-                                <p>Every dish is crafted with love, care, and a commitment to giving our guests a truly memorable dining experience.</p>
-                            </div>
-                        </div>
-
                     </div>
-                    <!-- /Reasons Container -->
-
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="request-card text-center">
+                            <div class="request-icon">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <h4>Friendly Atmosphere</h4>
+                            <p>Enjoy your meal in a cozy and welcoming space where our team treats you like family.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="request-card text-center">
+                            <div class="request-icon">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                            <h4>Fresh & Local Ingredients</h4>
+                            <p>We partner with local farmers and suppliers to ensure every dish is fresh, healthy, and full of flavor.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="request-card text-center">
+                            <div class="request-icon">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <h4>Passion for Excellence</h4>
+                            <p>Every dish is crafted with love, care, and a commitment to giving our guests a truly memorable dining experience.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -570,8 +555,8 @@
                     <div class="footer-col contact">
                         <h4 class="name">Contact Us</h4>
                         <ul class="contact-info">
-                            <li><i class="fa fa-map-marker"></i> 123 Main Street, Douala, Cameroon</li>
-                            <li><i class="fa fa-phone"></i> +237 699 123 456</li>
+                            <li><i class="fa fa-map-marker"></i> Ekounou Yaounde, Cameroon</li>
+                            <li><i class="fa fa-phone"></i> (+237) 674-467-985</li>
                             <li><i class="fa fa-envelope"></i> info@licrestaurant.cm</li>
                         </ul>
         
@@ -585,10 +570,10 @@
                     <!-- Social & Newsletter -->
                     <div class="footer-col social-newsletter">
                         <h4 class="name">Follow Us</h4>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <ul class="social-nav">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         </ul>
         
                         <h4>Newsletter</h4>
@@ -613,14 +598,13 @@
                         <a href="https://colorlib.com" target="_blank">Colorlib</a>
                     </div>
                     <nav class="footer-nav">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Menu</a>
-                        <a href="#">Reservation</a>
-                        <a href="#">Gallery</a>
-                        <a href="#">Events</a>
-                        <a href="#">Contact</a>
-                    </nav>
+						<a href="index.html">Home</a>
+						<a href="menu.html">Menu</a>
+						<a href="reservation.html">Reservation</a>
+						<a href="event.html">Events</a>
+						<a href="about.html">About</a>
+						<a href="contact.html">Contact</a>
+					</nav>
                 </div>
         
             </div>
