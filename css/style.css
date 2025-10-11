@@ -252,6 +252,11 @@ textarea.input {
 	transition:0.2s all;
 }
 
+.social-nav li a.user{
+	color: #444;
+	border: 1px solid #444;
+}
+
 .social-nav li a:hover , .social-nav li a:focus {
 	color: #FFF;
 	background-color: #f36700;
@@ -811,6 +816,10 @@ textarea.input {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 	transition: 0.3s;
 	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .meal:hover {
@@ -820,7 +829,7 @@ textarea.input {
 .meal img {
 	width: 100%;
 	border-radius: 2px;
-	height: 150px;
+	max-height: 200px;
 	object-fit: cover;
 }
 
@@ -852,6 +861,18 @@ textarea.input {
 	font-size: 14px;
 }
 
+@media (max-width: 767px) {
+	.meal img {
+		width: 250px;
+		min-height: 150px;
+	}
+}
+@media (max-width: 600px) {
+	.meal img {
+		width: 100%;
+	}
+}
+/* cart section */
 .cart-section {
 	position: -webkit-sticky;
 	position: sticky;
@@ -1325,9 +1346,25 @@ textarea.input {
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
-    .events-section {
-        padding: 60px 0;
-    }
+	.event-card-col {
+		width: 100%;
+	}
+
+	.event-card{
+		width: 100%;
+	}
+	
+	.event-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-height: 200px;
+	}
+
+	.event-image img {
+		width: 200px;
+		object-fit: cover;
+	}
 
     .event-content {
         padding: 15px;
@@ -1340,6 +1377,31 @@ textarea.input {
     .event-description {
         font-size: 13px;
     }
+
+	.event-card:hover, .host-info:hover, .host-event-form:hover {
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
+		transform: translateY(0);
+		background: #ffffff;
+	}
+}
+
+@media (max-width: 500px) {
+	.event-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-height: 200px;
+	}
+
+	.event-image img {
+		width: 100%;
+		object-fit: cover;
+	}
+	.event-card:hover, .host-info:hover, .host-event-form:hover {
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+		transform: translateY(-5px);
+		background: #ffffff;
+	}
 }
 
 /* Event Cards inside Owl Carousel */
@@ -1722,14 +1784,14 @@ textarea.input {
 }
 
 .footer-nav a {
-	display:inline-block;
-	margin-left:15px;
-	color:#969696;
-	font-size:14px;
-	text-transform:uppercase;
+	display: inline-block;
+	margin-left: 15px;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 
-.footer-nav a:hover , .footer-nav a:focus {
+#footer .footer-nav a:hover, 
+#footer .footer-nav a:focus {
 	color:#f36500;
 }
 
@@ -1948,6 +2010,228 @@ textarea.input {
 }
 .copyright a:hover {
 	color: #F9F9F9;
+}
+
+/*------------------------------------*\
+	Login and Signup
+\*------------------------------------*/
+
+.user-info-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.profile-summary {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.profile-picture {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.profile-summary .profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+	object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-summary .user-name {
+    color: #f36500;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-summary .user-email {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.profile-summary .account-stats li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.edit-profile-form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.edit-profile-form h3 {
+    color: #f36500;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Stack on small screens */
+@media (max-width: 991px) {
+    .user-info-col{
+		width: 100%;
+		margin: 10px;
+	}
+	.password-group {
+		position: relative;
+		width: 100%;
+		padding: 0;
+		height: auto;
+	}
+	
+	.toggle-password {
+		position: absolute;
+		top: 50%;
+		right: 30px;
+		transform: translateY(50%);
+		cursor: pointer;
+		color: #aaa;
+		font-size: 20px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.profile-picture {
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+	}
+
+    .profile-summary .profile-picture img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/* reservation and participation */
+.reservation-table {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+.reservation-table th,
+.reservation-table td {
+    text-align: center;
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.reservation-table th {
+    background-color: #f36500;
+    color: #fff;
+    font-weight: bold;
+}
+
+.reservation-table td {
+    background-color: #fff;
+}
+
+.reservation-table .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.reservation-table .status.confirmed { background-color: #28a745; }
+.reservation-table .status.completed { background-color: #17a2b8; }
+.reservation-table .status.cancelled { background-color: #dc3545; }
+
+/* participation points */
+.points-wrapper .points-count {
+    color: #f36500;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.points-wrapper h3 {
+    font-size: 28px;
+    color: #f36500;
+    margin-bottom: 20px;
+}
+
+.reward-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.reward-card:hover {
+    transform: translateY(-5px);
+}
+
+.reward-card h4 {
+    color: #f36500;
+    margin-bottom: 10px;
+}
+
+.reward-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* how to get point */
+.points-earning-cards .points-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.points-card .points-icon {
+	color: #fff;
+	margin-bottom: 15px;
+	background-color: #f36500;
+	width: 80px;
+	height: 80px;
+	border-radius: 50% 0 50% 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .3s ease;
+}
+
+.points-earning-cards .points-card:hover {
+    transform: translateY(-5px);
+}
+
+.points-earning-cards .points-card:hover .points-icon{
+	scale: 1.1;
+}
+
+
+.points-card h4 {
+    color: #f36500;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.points-card p {
+    font-size: 14px;
+    color: #6c757d;
 }
 
 /*------------------------------------*\
@@ -2243,8 +2527,14 @@ textarea.input {
 		margin:0px auto 15px;
 	}
 
-	.event .event-content {
+	.event .event-contents {
 		padding-left:0px;
+	}
+
+	.menu-nav li a {
+		font-family: 'Quicksand', sans-serif;
+		display: block;
+		padding: 15px;
 	}
 }
 

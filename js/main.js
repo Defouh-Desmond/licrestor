@@ -7,7 +7,7 @@
 	});
 	
 	// Mobile Toggle Btn
-	$('.navbar-toggle, .cart-button').on('click',function(){
+	$('.navbar-toggle, .cart-button, .main-button').on('click',function(){
 		$('#header').toggleClass('nav-collapse');
 	});
 	
