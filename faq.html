@@ -105,13 +105,128 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h2 class="white-text title">Login</h2>
+						<h2 class="white-text title">FAQ</h2>
 					</div>
 				</div>
 			</div>
 		</div>
         
-        
+        <!-- FAQ Section -->
+        <div id="faq-section" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="section-header text-center">
+                            <h4 class="sub-title">Need Help?</h4>
+                            <h2 class="title">Frequently Asked Questions</h2>
+                            <p>Find quick answers to common questions about reservations, rewards, and more.</p>
+                        </div>
+
+                        <!-- 🔍 Search Bar -->
+                        <div class="faq-search text-center">
+                            <input type="text" id="faqSearch" class="input" placeholder="Search for a question...">
+                        </div>
+
+                        <div class="panel-group" id="faqAccordion" role="tablist" aria-multiselectable="true">
+
+                        <!-- Question 1 -->
+                        <div class="panel panel-default faq-card">
+                            <div class="panel-heading" role="tab" id="faq1">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#answer1" aria-expanded="true" aria-controls="answer1">
+                                    <i class="fa fa-question-circle"></i> How do I make a reservation?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="answer1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="faq1">
+                                <div class="panel-body">
+                                    You can book your table easily through our online reservation form or by calling our restaurant directly. We recommend booking in advance for weekends.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="panel panel-default faq-card">
+                            <div class="panel-heading" role="tab" id="faq2">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#answer2" aria-expanded="false" aria-controls="answer2">
+                                    <i class="fa fa-cutlery"></i> Do you offer catering services?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="answer2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq2">
+                                <div class="panel-body">
+                                    Yes! We offer catering for birthdays, corporate events, and private parties. Contact us for a personalized menu and quote.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="panel panel-default faq-card">
+                            <div class="panel-heading" role="tab" id="faq3">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#answer3" aria-expanded="false" aria-controls="answer3">
+                                    <i class="fa fa-truck"></i> Do you provide delivery?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="answer3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq3">
+                                <div class="panel-body">
+                                    Absolutely! We deliver across Douala through our trusted partners. Simply order online or call to arrange delivery.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="panel panel-default faq-card">
+                            <div class="panel-heading" role="tab" id="faq4">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#answer4" aria-expanded="false" aria-controls="answer4">
+                                    <i class="fa fa-credit-card"></i> What payment methods do you accept?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="answer4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq4">
+                                <div class="panel-body">
+                                    We accept cash, mobile money (MTN, Orange), and all major credit/debit cards at our restaurant.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="panel panel-default faq-card">
+                            <div class="panel-heading" role="tab" id="faq5">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#faqAccordion" href="#answer5" aria-expanded="false" aria-controls="answer5">
+                                    <i class="fa fa-clock-o"></i> What are your opening hours?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="answer5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="faq5">
+                                <div class="panel-body">
+                                    We’re open Monday to Friday from 10:00 AM – 10:00 PM, and weekends from 12:00 PM – 11:00 PM.
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Contact CTA -->
+                        <div class="faq-contact text-center">
+                            <h4>Didn’t find your answer?</h4>
+                            <p>We’re happy to help! Reach out to our team and we’ll get back to you shortly.</p>
+                            <a href="contact.html" class="btn main-button">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /FAQ Section -->
+
+        <style>
+
+
+        </style>
+
 
 		<!-- Footer -->
         <footer id="footer">
@@ -202,6 +317,25 @@
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <script type="text/javascript" src="js/google-map.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+        <script>
+            document.getElementById('faqSearch').addEventListener('keyup', function() {
+              const searchValue = this.value.toLowerCase();
+              const faqCards = document.querySelectorAll('.faq-card');
+              
+              faqCards.forEach(card => {
+                const question = card.querySelector('.panel-title').innerText.toLowerCase();
+                const answer = card.querySelector('.panel-body').innerText.toLowerCase();
+          
+                if (question.includes(searchValue) || answer.includes(searchValue)) {
+                  card.style.display = 'block';
+                } else {
+                  card.style.display = 'none';
+                }
+              });
+            });
+          </script>
+          
 
     </body>
 </html>

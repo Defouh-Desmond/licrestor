@@ -662,7 +662,7 @@ textarea.input {
 
 .chef-card h4{
 	font-size: 18px;
-	color: #f36500;
+	color: #333;
 }
 
 .mission-vision-row {
@@ -696,7 +696,7 @@ textarea.input {
 }
 
 .about-content h3 {
-	color: #f36700; 
+	color: #333; 
 	font-weight: 600;
 }
 
@@ -834,7 +834,7 @@ textarea.input {
 }
 
 .meal .name {
-  color: #f36500;
+  color: #333;
   font-weight: 600;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -1059,18 +1059,14 @@ textarea.input {
 	border-color: rgba(255, 255, 255, 0.2);
 }
 
-/* reservation page */
-/* ---------- Reservation Form ---------- */
+/* ---------- Reservation page ---------- */
+/* reservation form */
 .reservation-form input,
 .reservation-form textarea {
     margin-bottom: 20px;
 }
 
-/* ---------- How It Works (Steps) ---------- */
-.reservation-steps,.special-requests {
-    background-color: #fff7f2;
-}
-
+/* ---------- How It Works and Special Dining Requests ---------- */
 .steps-row, .requests-row {
     display: flex;
     flex-wrap: wrap;
@@ -1115,12 +1111,12 @@ textarea.input {
 }
 
 .step-card:hover .step-icon, .request-card:hover .request-icon {
-    background-color: #f36700;
+    /* background-color: #f36500; */
 	scale: 1.1;
 }
 
 .step-card h4, .request-card h4 {
-    color: #f36500;
+    color: #333;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -1140,7 +1136,7 @@ textarea.input {
 }
 
 .policy-item h4 {
-    color: #f36500;
+    color: #333;
     font-weight: 600;
     margin-bottom: 8px;
     display: flex;
@@ -1152,11 +1148,7 @@ textarea.input {
     font-size: 24px;
 }
 
-/* ---------- Special Dining Requests ---------- */
-
-
-
-/* ---------- Responsive Tweaks ---------- */
+/* ---------- Responsive ---------- */
 @media (max-width: 991px) {
     .step-card, .request-card {
         padding: 25px 15px;
@@ -1324,18 +1316,17 @@ textarea.input {
 
 .event-title {
     font-weight: bold;
-    color: #f36500;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .event-date {
-    color: #777;
     font-size: 14px;
     margin-bottom: 15px;
 }
 
 .event-date i {
-    color: #f36500;
+    color: #333;
     margin-right: 5px;
 }
 
@@ -1429,7 +1420,7 @@ textarea.input {
 }
 
 .event-info h4 {
-    color: #f36500;
+    color: #333;
     font-weight: 700;
     margin-bottom: 10px;
     font-size: 18px;
@@ -1437,7 +1428,6 @@ textarea.input {
 
 .event-info p {
     font-size: 14px;
-    color: #555;
 }
 
 /* Owl Carousel Custom Controls */
@@ -1495,7 +1485,7 @@ textarea.input {
 }
 
 .host-info h4 {
-    color: #f36700;
+    color: #333;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -1557,7 +1547,7 @@ textarea.input {
 }
 
 .details-title {
-    color: #f36700;
+    color: #333;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -1580,7 +1570,6 @@ textarea.input {
 
 .follow-heading {
     font-weight: 600;
-    color: #f36700;
     margin-bottom: 10px;
 }
 
@@ -1600,8 +1589,9 @@ textarea.input {
 	background: #ffffff;
 }
 
-.form-title {
-    color: #f36700;
+.form-title,
+.follow-heading {
+    color: #333;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -1610,32 +1600,50 @@ textarea.input {
 /* Responsive */
 
 /* FAQ Section */
-.faq-section {
-  background-color: #fff;
+.faq-section, #faq-section {
+	background-color: #fff;
 }
+
+/* FAQ SEARCH */
+.faq-search {
+	margin-bottom: 30px;
+}
+  
+#faqSearch {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+/* faq */
 
 .faq-section .panel-group {
   margin-top: 30px;
 }
 
-.faq-section .panel-default {
-  border: 1px solid #ECECEC;
-  margin-bottom: 15px;
-  overflow: hidden;
-  transition: all 0.3s ease;
+.faq-section .panel-default, 
+.faq-card {
+	border-radius: 8px;
+	margin-bottom: 15px;
+	border: none;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	border: 1px solid #ECECEC;
 }
 
-.faq-section .panel-default:hover {
+.faq-section .panel-default:hover, 
+.faq-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.faq-section .panel-heading {
-  background-color: #f9f9f9;
-  padding: 15px 20px;
+.faq-section .panel-heading, 
+.faq-card .panel-heading {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 15px 20px;
 }
 
 .faq-section .panel-title a {
-  color: #f36500;
+  color: #333;
   font-weight: 600;
   text-decoration: none;
   display: flex;
@@ -1643,8 +1651,17 @@ textarea.input {
   justify-content: space-between;
 }
 
-.faq-section .panel-title a:hover {
-  color: #f36700;
+.faq-card .panel-title a {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.faq-section .panel-title a:hover, 
+.faq-card .panel-title a:hover {
+	color: #f36500;
 }
 
 /* Icon style */
@@ -1668,11 +1685,40 @@ textarea.input {
   content: "\f067"; /* plus icon */
 }
 
-.faq-section .panel-body {
-  background: #fff;
-  color: #555;
-  padding: 20px;
-  line-height: 1.6;
+.faq-section .panel-body,
+.faq-card .panel-body {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-top: 1px solid #eee;
+	border-radius: 0 0 8px 8px;
+	color: #555;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+/* FAQ PAGE */    
+.faq-card .panel-title i {
+	color: #f36500;
+	margin-right: 10px;
+}
+  
+  /* Contact CTA */
+.faq-contact {
+	margin-top: 50px;
+	padding: 30px;
+	background: #fff5ef;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+  
+.faq-contact h4 {
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+  
+.faq-contact p {
+	margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -2048,7 +2094,7 @@ textarea.input {
 }
 
 .profile-summary .user-name {
-    color: #f36500;
+    color: #333;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -2071,7 +2117,7 @@ textarea.input {
 }
 
 .edit-profile-form h3 {
-    color: #f36500;
+    color: #333;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -2152,14 +2198,14 @@ textarea.input {
 
 /* participation points */
 .points-wrapper .points-count {
-    color: #f36500;
+    color: #333;
     font-weight: bold;
     font-size: 28px;
 }
 
 .points-wrapper h3 {
     font-size: 28px;
-    color: #f36500;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -2177,7 +2223,7 @@ textarea.input {
 }
 
 .reward-card h4 {
-    color: #f36500;
+    color: #333;
     margin-bottom: 10px;
 }
 
@@ -2224,7 +2270,7 @@ textarea.input {
 
 
 .points-card h4 {
-    color: #f36500;
+    color: #333;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -2290,7 +2336,7 @@ textarea.input {
 
 .signup-form h3 {
     text-align: center;
-    color: #f36500;
+    color: #333;
     font-weight: bold;
     margin-bottom: 25px;
 }
@@ -2378,7 +2424,6 @@ textarea.input {
 }
 
 .login-link a {
-    color: #f36500;
     font-weight: bold;
 }
 
@@ -2408,6 +2453,39 @@ textarea.input {
     }
 }
 
+/*------------------------------------*\
+	privacy and terms and conditions
+\*------------------------------------*/
+
+#privacy-section,
+#terms-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.privacy-content h4,
+.terms-content h4 {
+    color: #333;
+    font-weight: bold;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.privacy-content p,
+.terms-content p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.privacy-content i,
+.terms-content i {
+    color: #f36500;
+    font-size: 16px;
+}
 
 /*------------------------------------*\
 	Responsive
@@ -2513,22 +2591,26 @@ textarea.input {
 @media only screen and (max-width: 480px) {
 	/* --- social nav --- */
 	.social-nav  {
-		display:none;
+		display: none;
+	}
+
+	.social-newsletter .social-nav  {
+		display: inline-block;
 	}
 
 	/* --- event --- */
 	.event {
-		text-align:center;
-		margin-bottom:30px;
+		text-align: center;
+		margin-bottom: 30px;
 	}
 
 	.event .event-img {
-		position:static;
-		margin:0px auto 15px;
+		position: static;
+		margin: 0px auto 15px;
 	}
 
 	.event .event-contents {
-		padding-left:0px;
+		padding-left: 0px;
 	}
 
 	.menu-nav li a {
