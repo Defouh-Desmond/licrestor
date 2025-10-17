@@ -1574,7 +1574,7 @@ textarea.input {
 }
 
 /* Contact Form */
-.contact-form-box {
+.contact-form-box, .checkout-form-box {
     background: #fff;
     border-radius: 4px;
     padding: 30px;
@@ -1583,7 +1583,7 @@ textarea.input {
 	transition: all .3s ease;
 }
 
-.contact-form-box:hover, .contact-details-box:hover {
+.contact-form-box:hover, .contact-details-box:hover, .checkout-form-box:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     transform: translateY(-5px);
 	background: #ffffff;
